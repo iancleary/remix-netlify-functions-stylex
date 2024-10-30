@@ -24,7 +24,7 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       <header>
-        <h1 {...stylex.props(styles.header)}>Welcome to </h1>
+        <h1 {...stylex.props(styles.header)}>Welcome to Remix with StyleX</h1>
       </header>
       <ul {...stylex.props(styles.list)}>
         {resources.map(({ href, text, icon }) => (
