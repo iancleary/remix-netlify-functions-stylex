@@ -46,3 +46,5 @@ Configure Remix with StyleX
 <https://www.youtube.com/watch?v=s2zKwtVXy7k>
 
 You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+
+https://github.com/netlify/remix-compute/blob/main/docs/upgrading.md
