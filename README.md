@@ -30,7 +30,7 @@ Now you'll need to pick a host to deploy it to.
 
 If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
 
-Make sure to deploy the output of `onpm run build`
+Make sure to deploy the output of `pnpm run build`
 
 - `build/server`
 - `build/client`
