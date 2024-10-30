@@ -12,6 +12,7 @@ declare module "@remix-run/node" {
 
 export default defineConfig({
   plugins: [
+    styleX(),
     remix({
       future: {
         v3_fetcherPersist: true,
@@ -23,6 +24,5 @@ export default defineConfig({
     }),
     netlifyPlugin(),
     tsconfigPaths(),
-    styleX(),
   ],
 });
