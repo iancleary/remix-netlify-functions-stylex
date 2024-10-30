@@ -28,7 +28,20 @@ module.exports = {
     // React
     {
       files: ["**/*.{js,jsx,ts,tsx}"],
-      plugins: ["react", "jsx-a11y"],
+      plugins: ["react", "jsx-a11y", "@stylexjs"],
+      rules: {
+        "@stylexjs/valid-styles": [
+            "error",
+            {
+              propLimits: {
+                padding: {
+                  limit: [0, 4, 8, 16, 32, 64],
+                  reason: "Use a padding that conforms to the design system",
+                }
+              }
+            }
+        ],
+      },
       extends: [
         "plugin:react/recommended",
         "plugin:react/jsx-runtime",
