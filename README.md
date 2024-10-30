@@ -7,7 +7,7 @@
 Run the dev server:
 
 ```shellscript
-npm run dev
+onpm run dev
 ```
 
 ## Deployment
@@ -15,13 +15,13 @@ npm run dev
 First, build your app for production:
 
 ```sh
-npm run build
+onpm run build
 ```
 
 Then run the app in production mode:
 
 ```sh
-npm start
+onpm start
 ```
 
 Now you'll need to pick a host to deploy it to.
@@ -30,7 +30,7 @@ Now you'll need to pick a host to deploy it to.
 
 If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
 
-Make sure to deploy the output of `npm run build`
+Make sure to deploy the output of `onpm run build`
 
 - `build/server`
 - `build/client`
@@ -44,7 +44,5 @@ Make sure to deploy the output of `npm run build`
 Configure Remix with StyleX
 
 <https://www.youtube.com/watch?v=s2zKwtVXy7k>
-
-
 
 You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
