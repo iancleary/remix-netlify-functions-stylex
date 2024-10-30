@@ -7,7 +7,7 @@
 Run the dev server:
 
 ```shellscript
-onpm run dev
+pnpm run dev
 ```
 
 ## Deployment
@@ -15,13 +15,13 @@ onpm run dev
 First, build your app for production:
 
 ```sh
-onpm run build
+pnpm run build
 ```
 
 Then run the app in production mode:
 
 ```sh
-onpm start
+pnpm start
 ```
 
 Now you'll need to pick a host to deploy it to.
