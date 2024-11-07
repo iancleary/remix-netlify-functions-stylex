@@ -6,15 +6,26 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
+import * as stylex from "@stylexjs/stylex";
+
 
 import "./index.css";
 
 export const links: LinksFunction = () => [
 ];
 
+const styles = stylex.create({
+  root: {
+    backgroundColor: {
+      default: 'lightblue',
+    },
+  }
+})
+
+
 export function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en">
+  return ( 
+    <html lang="en" {...stylex.props(styles.root)}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
