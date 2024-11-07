@@ -2,14 +2,35 @@ import type { MetaFunction } from "@remix-run/node";
 import * as stylex from "@stylexjs/stylex";
 
 const styles = stylex.create({
+  root: {
+    backgroundColor: {
+      default: 'lightblue',
+    },
+  },
   header: {
     fontSize: 28,
     lineHeight: 1.5,
-    backgroundColor: "green",
+    backgroundColor: "white",
     padding: 4,
+    borderRadius: 8,
+    paddingInline: 16,
+    marginInline: 16,
   },
-  list: {
-    backgroundColor: "yellow",
+  list: {    
+    color: {
+      default: 'black',
+    },
+    marginTop: 10,
+  },
+  listItem: {    
+    marginTop: 10,
+  },
+  a : {
+    color: {
+      default: 'black',
+      ':hover': 'white',
+    },
+    fontSize: 20,
   }
 })
 
@@ -28,8 +49,8 @@ export default function Index() {
       </header>
       <ul {...stylex.props(styles.list)}>
         {resources.map(({ href, text, icon }) => (
-          <li key={href}>
-            <a
+          <li key={href} {...stylex.props(styles.listItem)}>
+            <a {...stylex.props(styles.a)}
               href={href}
               target="_blank"
               rel="noreferrer"
