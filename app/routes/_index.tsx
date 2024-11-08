@@ -28,8 +28,8 @@ const styles = stylex.create({
   },
   a : {
     color: {
-      default: 'black',
-      ':hover': 'white',
+      default: colors.primaryText,
+      ':hover': colors.accent,
     },
     fontSize: font.medium,
   }
