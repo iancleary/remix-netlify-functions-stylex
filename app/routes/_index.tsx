@@ -80,6 +80,6 @@ const resources = [
   },
   {
     href: "https://stylexjs.com/docs/learn/thinking-in-stylex/",
-    text: "Thinking in StyleX Discord",
+    text: "Thinking in StyleX",
   },
 ];
