@@ -12,7 +12,16 @@ declare module "@remix-run/node" {
 
 export default defineConfig({
   plugins: [
-    styleX(),
+    styleX({
+      // // https://stylexjs.com/docs/api/configuration/babel-plugin/#unstable_moduleresolution
+      unstable_moduleResolution: {
+        type: 'commonJS',
+        //
+        // rootDir cannot be "."
+        // rootDir must be "./" since that resolves to the absolute path
+        rootDir: "./" 
+      },
+    }),
     remix({
       future: {
         v3_fetcherPersist: true,
