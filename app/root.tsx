@@ -7,6 +7,7 @@ import {
 } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
 import * as stylex from "@stylexjs/stylex";
+import { colors, spacing } from './styles/tokens.stylex';
 
 
 import "./index.css";
@@ -17,8 +18,10 @@ export const links: LinksFunction = () => [
 const styles = stylex.create({
   root: {
     backgroundColor: {
-      default: 'lightblue',
+      default: colors.background,
     },
+    paddingLeft: spacing.large,
+    paddingRight: spacing.large,
   }
 })
 

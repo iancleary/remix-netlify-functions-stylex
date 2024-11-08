@@ -1,5 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
 import * as stylex from "@stylexjs/stylex";
+import {colors, font} from '../styles/tokens.stylex';
 
 const styles = stylex.create({
   root: {
@@ -8,7 +9,7 @@ const styles = stylex.create({
     },
   },
   header: {
-    fontSize: 28,
+    fontSize: font.large,
     lineHeight: 1.5,
     backgroundColor: "white",
     padding: 4,
@@ -18,7 +19,7 @@ const styles = stylex.create({
   },
   list: {    
     color: {
-      default: 'black',
+      default: colors.primaryText,
     },
     marginTop: 10,
   },
@@ -30,7 +31,7 @@ const styles = stylex.create({
       default: 'black',
       ':hover': 'white',
     },
-    fontSize: 20,
+    fontSize: font.medium,
   }
 })
 
